@@ -17,3 +17,15 @@ class Problem(object):
     
     print(checkDuplicate(nums))
     
+ 
+## Solution 2 - This solution does not work if the array has more than one uniq number. 
+nums = [1,1,4]
+
+def checkDuplicates(nums, len_nums):
+    xor = nums[0]
+    for i in range(1, len_nums):
+        xor ^= nums[i]
+
+    return xor
+        
+print(checkDuplicates(nums, len(nums)))
