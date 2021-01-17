@@ -1,0 +1,19 @@
+
+#1 - Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
+
+## Solution 1
+class Problem(object):
+    nums = [2,2,1]
+    def checkDuplicate(nums):
+        not_duplicate = []
+
+        for i in nums:
+            if i not in not_duplicate:
+                not_duplicate.append(i)
+            else:
+                not_duplicate.remove(i)
+
+        return not_duplicate
+    
+    print(checkDuplicate(nums))
+    
