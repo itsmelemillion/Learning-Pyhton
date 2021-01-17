@@ -18,7 +18,7 @@ class Problem(object):
     print(checkDuplicate(nums))
     
  
-## Solution 2 - This solution does not work if the array has more than one uniq number. 
+## Solution 2 - This solution does not work if the array has more than 3 numbers
 nums = [1,1,4]
 
 def checkDuplicates(nums, len_nums):
